@@ -130,7 +130,7 @@ footer {
     z-index: 11;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     #wave-one {
         position: absolute;
         background: #0af;
