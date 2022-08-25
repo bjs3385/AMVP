@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     text-align: center;
     background-color: #C7D6DB;
 }
@@ -108,7 +109,7 @@ footer {
     }
     #wave-four {
         position: absolute;
-        bottom: 12%;
+        bottom: 15%;
         left: -9%;
         background: rgb(67, 101, 203);
         width: 1000px;
