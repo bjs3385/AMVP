@@ -64,6 +64,62 @@ footer {
     clear: both;
 }
 
+@media screen and (max-width: 600px) {
+    #wave-one {
+        position: absolute;
+        background: #0af;
+        bottom: 10%;
+        left: -3%;
+        width: 1000px;
+        height: 1000px;
+        margin-left: -250px;
+        margin-top: -250px;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 7000ms infinite linear, fadeOut 50s;
+    }
+    #wave-two {
+        opacity: .1;
+        position: absolute;
+        background: whitesmoke;
+        bottom: 10%;
+        left: -7%;
+        width: 1000px;
+        height: 1000px;
+        margin-left: -250px;
+        margin-top: -250px;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 6000ms infinite linear, fadeOut 50s;
+    }
+    #wave-three {
+        position: absolute;
+        background: skyblue;
+        bottom: 20%;
+        left: -9%;
+        width: 1000px;
+        height: 1000px;
+        margin-left: -250px;
+        margin-top: -250px;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 5000ms infinite linear, fadeOut 50s;
+    }
+    #wave-four {
+        position: absolute;
+        bottom: 12%;
+        left: -9%;
+        background: rgb(67, 101, 203);
+        width: 1000px;
+        height: 1000px;
+        margin-left: -250px;
+        margin-top: -250px;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4000ms infinite linear, fadeOut 50s;
+    }
+}
+
 #box {
     width: 100%;
     height: 90%;
@@ -74,61 +130,60 @@ footer {
     z-index: 11;
 }
 
-#wave-one {
-    position: absolute;
-    background: #0af;
-    bottom: 10%;
-    left: -3%;
-    width: 2000px;
-    height: 2000px;
-    margin-left: -250px;
-    margin-top: -250px;
-    transform-origin: 50% 48%;
-    border-radius: 43%;
-    animation: drift 7000ms infinite linear, fadeOut 50s;
-}
-
-#wave-two {
-    opacity: .1;
-    position: absolute;
-    background: whitesmoke;
-    bottom: 10%;
-    left: -7%;
-    width: 2000px;
-    height: 2000px;
-    margin-left: -250px;
-    margin-top: -250px;
-    transform-origin: 50% 48%;
-    border-radius: 43%;
-    animation: drift 6000ms infinite linear, fadeOut 50s;
-}
-
-#wave-three {
-    position: absolute;
-    background: skyblue;
-    bottom: 20%;
-    left: -9%;
-    width: 2000px;
-    height: 2000px;
-    margin-left: -250px;
-    margin-top: -250px;
-    transform-origin: 50% 48%;
-    border-radius: 43%;
-    animation: drift 5000ms infinite linear, fadeOut 50s;
-}
-
-#wave-four {
-    position: absolute;
-    bottom: 12%;
-    left: -9%;
-    background: rgb(67, 101, 203);
-    width: 2000px;
-    height: 2000px;
-    margin-left: -250px;
-    margin-top: -250px;
-    transform-origin: 50% 48%;
-    border-radius: 43%;
-    animation: drift 4000ms infinite linear, fadeOut 50s;
+@media screen and (min-width: 768px) {
+    #wave-one {
+        position: absolute;
+        background: #0af;
+        bottom: 10%;
+        left: -3%;
+        width: 2000px;
+        height: 2000px;
+        margin-left: -250px;
+        margin-top: -250px;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 7000ms infinite linear, fadeOut 50s;
+    }
+    #wave-two {
+        opacity: .1;
+        position: absolute;
+        background: whitesmoke;
+        bottom: 10%;
+        left: -7%;
+        width: 2000px;
+        height: 2000px;
+        margin-left: -250px;
+        margin-top: -250px;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 6000ms infinite linear, fadeOut 50s;
+    }
+    #wave-three {
+        position: absolute;
+        background: skyblue;
+        bottom: 20%;
+        left: -9%;
+        width: 2000px;
+        height: 2000px;
+        margin-left: -250px;
+        margin-top: -250px;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 5000ms infinite linear, fadeOut 50s;
+    }
+    #wave-four {
+        position: absolute;
+        bottom: 12%;
+        left: -9%;
+        background: rgb(67, 101, 203);
+        width: 2000px;
+        height: 2000px;
+        margin-left: -250px;
+        margin-top: -250px;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4000ms infinite linear, fadeOut 50s;
+    }
 }
 
 @keyframes drift {
