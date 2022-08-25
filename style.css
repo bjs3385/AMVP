@@ -64,21 +64,79 @@ footer {
     clear: both;
 }
 
-#animate {
+#box {
+    width: 100%;
+    height: 90%;
     position: absolute;
-    width: 100px;
-    height: 100px;
-    animation-name: move, fadeOut, changeColor;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    background: lighten(#f0f4c3, 10%);
+    z-index: 11;
 }
 
-@keyframes move {
+#wave-one {
+    position: absolute;
+    background: #0af;
+    bottom: 10%;
+    left: -3%;
+    width: 2000px;
+    height: 2000px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 7000ms infinite linear, fadeOut 50s;
+}
+
+#wave-two {
+    opacity: .1;
+    position: absolute;
+    background: whitesmoke;
+    bottom: 10%;
+    left: -7%;
+    width: 2000px;
+    height: 2000px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 6000ms infinite linear, fadeOut 50s;
+}
+
+#wave-three {
+    position: absolute;
+    background: skyblue;
+    bottom: 20%;
+    left: -9%;
+    width: 2000px;
+    height: 2000px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 5000ms infinite linear, fadeOut 50s;
+}
+
+#wave-four {
+    position: absolute;
+    bottom: 12%;
+    left: -9%;
+    background: rgb(67, 101, 203);
+    width: 2000px;
+    height: 2000px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 4000ms infinite linear, fadeOut 50s;
+}
+
+@keyframes drift {
     from {
-        left: 0
+        transform: rotate(0deg);
     }
-    to {
-        left: 300px
+    from {
+        transform: rotate(360deg);
     }
 }
 
@@ -88,14 +146,5 @@ footer {
     }
     to {
         opacity: 0;
-    }
-}
-
-@keyframes changeColor {
-    from {
-        background-color: red;
-    }
-    to {
-        background-color: blue;
     }
 }
